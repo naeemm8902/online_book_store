@@ -1,0 +1,87 @@
+/* Reset styles and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgb(241, 239, 239);
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    /* outline: 1px solid slategrey; */
+}
+
+/* Root */
+:root {
+    --black: #1B1212; /* Black */
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --accent-color: #e74c3c; /* Red */
+}
+
+/* The Landing Page all CSS */
+.landing {
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--accent-color); */
+    z-index: 0;
+}
+.landing .nav1 {
+    height: 7vh;
+    z-index: -1;
+}
+.landing .nav2 {
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    z-index: 999;
+    /* background-color: #000000; */
+    background-color: white;
+}
+.landing .search {
+    display: flex;
+    justify-content: center;
+    /* background-color: #000000; */
+    height: 7vh;
+    width: 100%;
+}
+.landing .info {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    height: calc(100vh - 17vh); /* Account for nav1 and search height */
+    width: 100%;
+}
+.landing .card {
+    position: sticky;
+    top: 0;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+    width: 100%;
+    height: calc(130vh - 17vh); /* Account for nav1 and search height */
+}
+.landing .card h1 {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--black); /* Using the custom color variable */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.landing .footer {
+  width: 100%;
+}
+.landing .book {
+    height: 100vh;
+  width: 100%;
+}
